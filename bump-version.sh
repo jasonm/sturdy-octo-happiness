@@ -22,8 +22,7 @@ cat > meeting-prep/.claude-plugin/plugin.json <<EOF
       "source": "./commands/briefing.md",
       "description": "Prepare a briefing doc for an upcoming meeting. Takes a meeting topic or calendar event as input and produces a structured agenda with context. (v${NEXT})"
     }
-  },
-  "skills": "./skills"
+  }
 }
 EOF
 
@@ -80,8 +79,7 @@ cat > research-digest/.claude-plugin/plugin.json <<EOF
       "source": "./commands/digest.md",
       "description": "Create a research digest on a topic. Fetches sources from the web and produces a structured summary with key findings and citations. (v${NEXT})"
     }
-  },
-  "skills": "./skills"
+  }
 }
 EOF
 

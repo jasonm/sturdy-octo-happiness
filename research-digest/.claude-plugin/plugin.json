@@ -6,6 +6,5 @@
       "source": "./commands/digest.md",
       "description": "Create a research digest on a topic. Fetches sources from the web and produces a structured summary with key findings and citations. (v3)"
     }
-  },
-  "skills": "./skills"
+  }
 }
