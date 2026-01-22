@@ -28,6 +28,10 @@ EOF
 
 # --- meeting-prep command ---
 cat > meeting-prep/commands/briefing.md <<EOF
+---
+description: "Prepare a meeting briefing (v${NEXT})"
+---
+
 # Briefing Command (v${NEXT})
 
 This is the briefing slash command, version ${NEXT}.
@@ -85,6 +89,10 @@ EOF
 
 # --- research-digest command ---
 cat > research-digest/commands/digest.md <<EOF
+---
+description: "Create a research digest (v${NEXT})"
+---
+
 # Digest Command (v${NEXT})
 
 This is the digest slash command, version ${NEXT}.

@@ -1,3 +1,7 @@
+---
+description: "Prepare a meeting briefing (v3)"
+---
+
 # Briefing Command (v3)
 
 This is the briefing slash command, version 3.

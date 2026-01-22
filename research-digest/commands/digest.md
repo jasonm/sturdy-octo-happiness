@@ -1,3 +1,7 @@
+---
+description: "Create a research digest (v3)"
+---
+
 # Digest Command (v3)
 
 This is the digest slash command, version 3.
