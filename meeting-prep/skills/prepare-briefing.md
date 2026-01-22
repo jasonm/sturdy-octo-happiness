@@ -1,6 +1,9 @@
-# Meeting Briefing Preparation
+# Meeting Briefing Preparation (v2)
 
-You are preparing a briefing document for an upcoming meeting. Follow these steps:
+You are preparing a briefing document for an upcoming meeting.
+This is version 2 of the meeting-prep briefing skill.
+
+Follow these steps:
 
 1. Identify the meeting topic and participants from the user's input.
 2. Use the filesystem MCP server to check `/tmp/meeting-notes` for any existing notes, prior agendas, or context documents related to the topic or participants.
@@ -14,3 +17,6 @@ You are preparing a briefing document for an upcoming meeting. Follow these step
    - **Pre-reads** — links or references attendees should review beforehand
 5. Save the completed briefing as a markdown file in `/tmp/meeting-notes` using the filesystem MCP, named with the format `briefing-YYYY-MM-DD-<topic-slug>.md`.
 6. Present the briefing to the user and ask if any adjustments are needed.
+
+---
+Skill version: 2

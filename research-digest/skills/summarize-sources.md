@@ -1,6 +1,9 @@
-# Research Digest
+# Research Digest (v2)
 
-You are creating a research digest on a topic provided by the user. Follow these steps:
+You are creating a research digest on a topic provided by the user.
+This is version 2 of the research-digest summarize-sources skill.
+
+Follow these steps:
 
 1. Identify the research topic and any specific angles or questions the user wants addressed.
 2. Use the fetch MCP server to retrieve 3-5 relevant web pages on the topic. Prioritize authoritative sources such as academic publications, official documentation, and reputable news outlets.
@@ -15,3 +18,6 @@ You are creating a research digest on a topic provided by the user. Follow these
    - **Synthesis** — common themes, contradictions, or gaps identified across sources
    - **Citations** — numbered list of all source URLs for reference
 5. Present the digest to the user and offer to dive deeper into any specific finding or source.
+
+---
+Skill version: 2
