@@ -3,8 +3,9 @@
   "description": "Synthesizes research from multiple web sources into a concise digest",
   "commands": {
     "digest-v2": {
-      "source": "./skills/summarize-sources.md",
+      "source": "./commands/digest.md",
       "description": "Create a research digest on a topic. Fetches sources from the web and produces a structured summary with key findings and citations. (v2)"
     }
-  }
+  },
+  "skills": "./skills"
 }

@@ -19,11 +19,29 @@ cat > meeting-prep/.claude-plugin/plugin.json <<EOF
   "description": "Helps prepare for meetings by pulling context and drafting agendas",
   "commands": {
     "briefing-v${NEXT}": {
-      "source": "./skills/prepare-briefing.md",
+      "source": "./commands/briefing.md",
       "description": "Prepare a briefing doc for an upcoming meeting. Takes a meeting topic or calendar event as input and produces a structured agenda with context. (v${NEXT})"
     }
-  }
+  },
+  "skills": "./skills"
 }
+EOF
+
+# --- meeting-prep command ---
+cat > meeting-prep/commands/briefing.md <<EOF
+# Briefing Command (v${NEXT})
+
+This is the briefing slash command, version ${NEXT}.
+
+When invoked, prepare a meeting briefing by:
+
+1. Asking the user for the meeting topic or calendar event details if not provided as an argument.
+2. Using the filesystem MCP to check \`/tmp/meeting-notes\` for related prior notes.
+3. Drafting a structured agenda with objectives, attendees, agenda items with time allocations, and open questions.
+4. Saving the result to \`/tmp/meeting-notes\` via the filesystem MCP.
+
+---
+Command version: ${NEXT}
 EOF
 
 # --- meeting-prep skill ---
@@ -59,11 +77,29 @@ cat > research-digest/.claude-plugin/plugin.json <<EOF
   "description": "Synthesizes research from multiple web sources into a concise digest",
   "commands": {
     "digest-v${NEXT}": {
-      "source": "./skills/summarize-sources.md",
+      "source": "./commands/digest.md",
       "description": "Create a research digest on a topic. Fetches sources from the web and produces a structured summary with key findings and citations. (v${NEXT})"
     }
-  }
+  },
+  "skills": "./skills"
 }
+EOF
+
+# --- research-digest command ---
+cat > research-digest/commands/digest.md <<EOF
+# Digest Command (v${NEXT})
+
+This is the digest slash command, version ${NEXT}.
+
+When invoked, create a research digest by:
+
+1. Asking the user for the research topic if not provided as an argument.
+2. Using the fetch MCP to retrieve 3-5 relevant web pages on the topic.
+3. Extracting key findings, evidence, and limitations from each source.
+4. Producing a structured digest with topic overview, key findings, source summaries, synthesis, and citations.
+
+---
+Command version: ${NEXT}
 EOF
 
 # --- research-digest skill ---
@@ -95,7 +131,7 @@ EOF
 
 # Commit and push
 git add -A
-git commit -m "Bump plugin commands to v${NEXT}"
+git commit -m "Bump plugin commands and skills to v${NEXT}"
 git push
 
 echo "Done. Plugins now at v${NEXT} (commands: briefing-v${NEXT}, digest-v${NEXT})"
