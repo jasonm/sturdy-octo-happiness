@@ -1,7 +1,7 @@
-# Meeting Briefing Preparation (v2)
+# Meeting Briefing Preparation (v3)
 
 You are preparing a briefing document for an upcoming meeting.
-This is version 2 of the meeting-prep briefing skill.
+This is version 3 of the meeting-prep briefing skill.
 
 Follow these steps:
 
@@ -19,4 +19,4 @@ Follow these steps:
 6. Present the briefing to the user and ask if any adjustments are needed.
 
 ---
-Skill version: 2
+Skill version: 3

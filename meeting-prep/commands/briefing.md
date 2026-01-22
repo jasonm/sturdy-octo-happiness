@@ -1,6 +1,6 @@
-# Briefing Command (v2)
+# Briefing Command (v3)
 
-This is the briefing slash command, version 2.
+This is the briefing slash command, version 3.
 
 When invoked, prepare a meeting briefing by:
 
@@ -10,4 +10,4 @@ When invoked, prepare a meeting briefing by:
 4. Saving the result to `/tmp/meeting-notes` via the filesystem MCP.
 
 ---
-Command version: 2
+Command version: 3

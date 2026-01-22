@@ -1,6 +1,6 @@
-# Digest Command (v2)
+# Digest Command (v3)
 
-This is the digest slash command, version 2.
+This is the digest slash command, version 3.
 
 When invoked, create a research digest by:
 
@@ -10,4 +10,4 @@ When invoked, create a research digest by:
 4. Producing a structured digest with topic overview, key findings, source summaries, synthesis, and citations.
 
 ---
-Command version: 2
+Command version: 3
