@@ -1,0 +1,10 @@
+{
+  "name": "meeting-prep",
+  "description": "Helps prepare for meetings by pulling context and drafting agendas",
+  "commands": {
+    "briefing": {
+      "source": "./skills/prepare-briefing.md",
+      "description": "Prepare a briefing doc for an upcoming meeting. Takes a meeting topic or calendar event as input and produces a structured agenda with context."
+    }
+  }
+}

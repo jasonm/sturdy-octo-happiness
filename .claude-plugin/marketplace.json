@@ -1,0 +1,19 @@
+{
+  "name": "productivity-tools",
+  "owner": {
+    "name": "jasonm"
+  },
+  "plugins": [
+    {
+      "name": "meeting-prep",
+      "source": "./meeting-prep"
+    },
+    {
+      "name": "research-digest",
+      "source": "./research-digest"
+    }
+  ],
+  "metadata": {
+    "description": "Knowledge worker productivity plugins"
+  }
+}
