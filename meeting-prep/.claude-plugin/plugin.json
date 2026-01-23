@@ -2,9 +2,9 @@
   "name": "meeting-prep",
   "description": "Helps prepare for meetings by pulling context and drafting agendas",
   "commands": {
-    "briefing-v9": {
+    "briefing-v10": {
       "source": "./commands/briefing.md",
-      "description": "Prepare a briefing doc for an upcoming meeting. Takes a meeting topic or calendar event as input and produces a structured agenda with context. (v9)"
+      "description": "Prepare a briefing doc for an upcoming meeting. Takes a meeting topic or calendar event as input and produces a structured agenda with context. (v10)"
     }
   }
 }
