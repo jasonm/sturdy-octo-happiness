@@ -1,10 +1,10 @@
 ---
-description: "Create a research digest (v16)"
+description: "Create a research digest (v17)"
 ---
 
-# Digest Command (v16)
+# Digest Command (v17)
 
-This is the digest slash command, version 16.
+This is the digest slash command, version 17.
 
 When invoked, create a research digest by:
 
@@ -14,4 +14,4 @@ When invoked, create a research digest by:
 4. Producing a structured digest with topic overview, key findings, source summaries, synthesis, and citations.
 
 ---
-Command version: 16
+Command version: 17
