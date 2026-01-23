@@ -15,7 +15,7 @@ echo "$NEXT" > VERSION
 # --- marketplace.json ---
 cat > .claude-plugin/marketplace.json <<EOF
 {
-  "name": "productivity-tools-v${NEXT}",
+  "name": "productivity-tools",
   "owner": {
     "name": "jasonm"
   },
