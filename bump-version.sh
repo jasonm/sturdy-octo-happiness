@@ -12,6 +12,31 @@ echo "Bumping from v${CURRENT} to v${NEXT}"
 # Write new VERSION
 echo "$NEXT" > VERSION
 
+# --- marketplace.json ---
+cat > .claude-plugin/marketplace.json <<EOF
+{
+  "name": "productivity-tools",
+  "owner": {
+    "name": "jasonm"
+  },
+  "plugins": [
+    {
+      "name": "meeting-prep",
+      "source": "./meeting-prep",
+      "description": "Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes. (v${NEXT})"
+    },
+    {
+      "name": "research-digest",
+      "source": "./research-digest",
+      "description": "Synthesizes research from multiple web sources into a concise digest with key findings and citations. (v${NEXT})"
+    }
+  ],
+  "metadata": {
+    "description": "Knowledge worker productivity plugins"
+  }
+}
+EOF
+
 # --- meeting-prep plugin.json ---
 cat > meeting-prep/.claude-plugin/plugin.json <<EOF
 {

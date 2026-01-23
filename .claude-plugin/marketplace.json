@@ -6,11 +6,13 @@
   "plugins": [
     {
       "name": "meeting-prep",
-      "source": "./meeting-prep"
+      "source": "./meeting-prep",
+      "description": "Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes. (v5)"
     },
     {
       "name": "research-digest",
-      "source": "./research-digest"
+      "source": "./research-digest",
+      "description": "Synthesizes research from multiple web sources into a concise digest with key findings and citations. (v5)"
     }
   ],
   "metadata": {
