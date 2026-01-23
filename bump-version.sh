@@ -23,12 +23,12 @@ cat > .claude-plugin/marketplace.json <<EOF
     {
       "name": "meeting-prep",
       "source": "./meeting-prep",
-      "description": "Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes. (v${NEXT})"
+      "description": "(v${NEXT}) Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes."
     },
     {
       "name": "research-digest",
       "source": "./research-digest",
-      "description": "Synthesizes research from multiple web sources into a concise digest with key findings and citations. (v${NEXT})"
+      "description": "(v${NEXT}) Synthesizes research from multiple web sources into a concise digest with key findings and citations."
     }
   ],
   "metadata": {
