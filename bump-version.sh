@@ -41,6 +41,7 @@ EOF
 cat > meeting-prep/.claude-plugin/plugin.json <<EOF
 {
   "name": "meeting-prep",
+  "version": "${NEXT}.0.0",
   "description": "Helps prepare for meetings by pulling context and drafting agendas",
   "commands": {
     "briefing-v${NEXT}": {
@@ -102,6 +103,7 @@ EOF
 cat > research-digest/.claude-plugin/plugin.json <<EOF
 {
   "name": "research-digest",
+  "version": "${NEXT}.0.0",
   "description": "Synthesizes research from multiple web sources into a concise digest",
   "commands": {
     "digest-v${NEXT}": {
