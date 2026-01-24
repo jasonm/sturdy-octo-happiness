@@ -1,7 +1,7 @@
-# Research Digest (v33)
+# Research Digest (v34)
 
 You are creating a research digest on a topic provided by the user.
-This is version 33 of the research-digest summarize-sources skill.
+This is version 34 of the research-digest summarize-sources skill.
 
 Follow these steps:
 
@@ -20,4 +20,4 @@ Follow these steps:
 5. Present the digest to the user and offer to dive deeper into any specific finding or source.
 
 ---
-Skill version: 33
+Skill version: 34
