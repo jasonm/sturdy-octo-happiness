@@ -7,12 +7,12 @@
     {
       "name": "meeting-prep",
       "source": "./meeting-prep",
-      "description": "(v25) Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes."
+      "description": "(v26) Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes."
     },
     {
       "name": "research-digest",
       "source": "./research-digest",
-      "description": "(v25) Synthesizes research from multiple web sources into a concise digest with key findings and citations."
+      "description": "(v26) Synthesizes research from multiple web sources into a concise digest with key findings and citations."
     }
   ],
   "metadata": {
