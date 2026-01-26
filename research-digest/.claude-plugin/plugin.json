@@ -1,11 +1,11 @@
 {
   "name": "research-digest",
-  "version": "44.0.0",
-  "description": "(v44) Synthesizes research from multiple web sources into a concise digest with key findings and citations.",
+  "version": "45.0.0",
+  "description": "(v45) Synthesizes research from multiple web sources into a concise digest with key findings and citations.",
   "commands": {
-    "digest-v44": {
+    "digest-v45": {
       "source": "./commands/digest.md",
-      "description": "Create a research digest on a topic. Fetches sources from the web and produces a structured summary with key findings and citations. (v44)"
+      "description": "Create a research digest on a topic. Fetches sources from the web and produces a structured summary with key findings and citations. (v45)"
     }
   }
 }
