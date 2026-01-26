@@ -1,10 +1,10 @@
 ---
-description: "Prepare a meeting briefing (v45)"
+description: "Prepare a meeting briefing (v46)"
 ---
 
-# Briefing Command (v45)
+# Briefing Command (v46)
 
-This is the briefing slash command, version 45.
+This is the briefing slash command, version 46.
 
 When invoked, prepare a meeting briefing by:
 
@@ -14,4 +14,4 @@ When invoked, prepare a meeting briefing by:
 4. Saving the result to `/tmp/meeting-notes` via the filesystem MCP.
 
 ---
-Command version: 45
+Command version: 46
