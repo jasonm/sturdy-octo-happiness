@@ -1,7 +1,7 @@
-# Research Digest (v52)
+# Research Digest (v53)
 
 You are creating a research digest on a topic provided by the user.
-This is version 52 of the research-digest summarize-sources skill.
+This is version 53 of the research-digest summarize-sources skill.
 
 Follow these steps:
 
@@ -20,4 +20,4 @@ Follow these steps:
 5. Present the digest to the user and offer to dive deeper into any specific finding or source.
 
 ---
-Skill version: 52
+Skill version: 53

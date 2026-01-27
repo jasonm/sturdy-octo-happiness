@@ -1,11 +1,11 @@
 {
   "name": "meeting-prep",
-  "version": "52.0.0",
-  "description": "(v52) Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes.",
+  "version": "53.0.0",
+  "description": "(v53) Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes.",
   "commands": {
-    "briefing-v52": {
+    "briefing-v53": {
       "source": "./commands/briefing.md",
-      "description": "Prepare a briefing doc for an upcoming meeting. Takes a meeting topic or calendar event as input and produces a structured agenda with context. (v52)"
+      "description": "Prepare a briefing doc for an upcoming meeting. Takes a meeting topic or calendar event as input and produces a structured agenda with context. (v53)"
     }
   }
 }

@@ -1,10 +1,10 @@
 ---
-description: "Create a research digest (v52)"
+description: "Create a research digest (v53)"
 ---
 
-# Digest Command (v52)
+# Digest Command (v53)
 
-This is the digest slash command, version 52.
+This is the digest slash command, version 53.
 
 When invoked, create a research digest by:
 
@@ -14,4 +14,4 @@ When invoked, create a research digest by:
 4. Producing a structured digest with topic overview, key findings, source summaries, synthesis, and citations.
 
 ---
-Command version: 52
+Command version: 53
