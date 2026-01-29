@@ -1,7 +1,7 @@
-# Meeting Briefing Preparation (v58)
+# Meeting Briefing Preparation (v59)
 
 You are preparing a briefing document for an upcoming meeting.
-This is version 58 of the meeting-prep briefing skill.
+This is version 59 of the meeting-prep briefing skill.
 
 Follow these steps:
 
@@ -19,4 +19,4 @@ Follow these steps:
 6. Present the briefing to the user and ask if any adjustments are needed.
 
 ---
-Skill version: 58
+Skill version: 59
