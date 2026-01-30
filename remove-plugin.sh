@@ -27,6 +27,6 @@ with open('.claude-plugin/marketplace.json', 'w') as f:
 git add -A
 git commit -m "Remove plugin: $PLUGIN"
 git push origin main
-git push gitlab main
+./push-to-gitlab.sh
 
 echo "Done. Removed '$PLUGIN' from marketplace."

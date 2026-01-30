@@ -19,6 +19,6 @@ fi
 
 git revert --no-edit "$REMOVE_COMMIT"
 git push origin main
-git push gitlab main
+./push-to-gitlab.sh
 
 echo "Done. Restored '$PLUGIN' to marketplace."
