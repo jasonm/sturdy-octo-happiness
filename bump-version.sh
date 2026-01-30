@@ -165,6 +165,7 @@ EOF
 # Commit and push
 git add -A
 git commit -m "Bump plugin commands and skills to v${NEXT}"
-git push
+git push origin main
+git push gitlab main
 
 echo "Done. Plugins now at v${NEXT} (commands: briefing-v${NEXT}, digest-v${NEXT})"

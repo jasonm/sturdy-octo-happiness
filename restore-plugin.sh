@@ -18,6 +18,7 @@ if [ -d "$PLUGIN" ]; then
 fi
 
 git revert --no-edit "$REMOVE_COMMIT"
-git push
+git push origin main
+git push gitlab main
 
 echo "Done. Restored '$PLUGIN' to marketplace."
