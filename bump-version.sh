@@ -12,24 +12,36 @@ echo "Bumping from v${CURRENT} to v${NEXT}"
 # Write new VERSION
 echo "$NEXT" > VERSION
 
-# --- marketplace.json ---
+# --- Build marketplace.json dynamically based on which plugins exist ---
+PLUGINS=""
+
+if [ -d "meeting-prep" ]; then
+  [ -n "$PLUGINS" ] && PLUGINS="${PLUGINS},"
+  PLUGINS="${PLUGINS}
+    {
+      \"name\": \"meeting-prep\",
+      \"source\": \"./meeting-prep\",
+      \"description\": \"(v${NEXT}) Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes.\"
+    }"
+fi
+
+if [ -d "research-digest" ]; then
+  [ -n "$PLUGINS" ] && PLUGINS="${PLUGINS},"
+  PLUGINS="${PLUGINS}
+    {
+      \"name\": \"research-digest\",
+      \"source\": \"./research-digest\",
+      \"description\": \"(v${NEXT}) Synthesizes research from multiple web sources into a concise digest with key findings and citations.\"
+    }"
+fi
+
 cat > .claude-plugin/marketplace.json <<EOF
 {
   "name": "productivity-tools",
   "owner": {
     "name": "jasonm"
   },
-  "plugins": [
-    {
-      "name": "meeting-prep",
-      "source": "./meeting-prep",
-      "description": "(v${NEXT}) Prepares briefing docs and structured agendas for upcoming meetings by pulling context and prior notes."
-    },
-    {
-      "name": "research-digest",
-      "source": "./research-digest",
-      "description": "(v${NEXT}) Synthesizes research from multiple web sources into a concise digest with key findings and citations."
-    }
+  "plugins": [${PLUGINS}
   ],
   "metadata": {
     "description": "Knowledge worker productivity plugins"
@@ -37,8 +49,9 @@ cat > .claude-plugin/marketplace.json <<EOF
 }
 EOF
 
-# --- meeting-prep plugin.json ---
-cat > meeting-prep/.claude-plugin/plugin.json <<EOF
+# --- meeting-prep (only if present) ---
+if [ -d "meeting-prep" ]; then
+  cat > meeting-prep/.claude-plugin/plugin.json <<EOF
 {
   "name": "meeting-prep",
   "version": "${NEXT}.0.0",
@@ -52,8 +65,7 @@ cat > meeting-prep/.claude-plugin/plugin.json <<EOF
 }
 EOF
 
-# --- meeting-prep command ---
-cat > meeting-prep/commands/briefing.md <<EOF
+  cat > meeting-prep/commands/briefing.md <<EOF
 ---
 description: "Prepare a meeting briefing (v${NEXT})"
 ---
@@ -73,8 +85,7 @@ When invoked, prepare a meeting briefing by:
 Command version: ${NEXT}
 EOF
 
-# --- meeting-prep skill ---
-cat > meeting-prep/skills/prepare-briefing.md <<EOF
+  cat > meeting-prep/skills/prepare-briefing.md <<EOF
 # Meeting Briefing Preparation (v${NEXT})
 
 You are preparing a briefing document for an upcoming meeting.
@@ -98,9 +109,11 @@ Follow these steps:
 ---
 Skill version: ${NEXT}
 EOF
+fi
 
-# --- research-digest plugin.json ---
-cat > research-digest/.claude-plugin/plugin.json <<EOF
+# --- research-digest (only if present) ---
+if [ -d "research-digest" ]; then
+  cat > research-digest/.claude-plugin/plugin.json <<EOF
 {
   "name": "research-digest",
   "version": "${NEXT}.0.0",
@@ -114,8 +127,7 @@ cat > research-digest/.claude-plugin/plugin.json <<EOF
 }
 EOF
 
-# --- research-digest command ---
-cat > research-digest/commands/digest.md <<EOF
+  cat > research-digest/commands/digest.md <<EOF
 ---
 description: "Create a research digest (v${NEXT})"
 ---
@@ -135,8 +147,7 @@ When invoked, create a research digest by:
 Command version: ${NEXT}
 EOF
 
-# --- research-digest skill ---
-cat > research-digest/skills/summarize-sources.md <<EOF
+  cat > research-digest/skills/summarize-sources.md <<EOF
 # Research Digest (v${NEXT})
 
 You are creating a research digest on a topic provided by the user.
@@ -161,6 +172,7 @@ Follow these steps:
 ---
 Skill version: ${NEXT}
 EOF
+fi
 
 # Commit and push
 git add -A
