@@ -7,7 +7,7 @@
     {
       "name": "research-digest",
       "source": "./research-digest",
-      "description": "(v64) Synthesizes research from multiple web sources into a concise digest with key findings and citations."
+      "description": "(v65) Synthesizes research from multiple web sources into a concise digest with key findings and citations."
     }
   ],
   "metadata": {
